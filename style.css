@@ -25,17 +25,17 @@ header {
     background-color: #45a049;
 }
 
-section {
+.section {
     padding: 50px;
     transition: background-color 0.3s;
 }
 
-section:hover {
-    background-color: #f0f0f0;
+.section:nth-child(even) {
+    background-color: #fffbe7;
 }
 
-h1, h2 {
-    color: #333;
+.section:hover {
+    background-color: #f0f0f0;
 }
 
 ul {
@@ -44,13 +44,4 @@ ul {
 
 li {
     margin-bottom: 10px;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-section {
-    animation: fadeIn 2s;
 }
