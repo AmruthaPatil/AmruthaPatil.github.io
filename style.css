@@ -1,8 +1,13 @@
-body {
-    font-family: Helvetica, Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
+    font-family: Helvetica, sans-serif;
     background-color: lightyellow;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
 }
 
 header {
@@ -11,37 +16,30 @@ header {
     text-align: center;
 }
 
-.nav-button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.nav-button:hover {
-    background-color: #45a049;
+nav a:hover {
+    color: #4CAF50;
 }
 
-.section {
-    padding: 50px;
-    transition: background-color 0.3s;
+section {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-.section:nth-child(even) {
-    background-color: #fffbe7;
+section:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s;
 }
 
-.section:hover {
-    background-color: #f0f0f0;
-}
-
-ul {
-    list-style-type: none;
-}
-
-li {
-    margin-bottom: 10px;
+h2 {
+    color: #4CAF50;
 }
