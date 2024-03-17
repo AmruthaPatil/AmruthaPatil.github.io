@@ -1,45 +1,98 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, sans-serif;
-    background-color: lightyellow;
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 .container {
     width: 80%;
     margin: auto;
-}
-
-header {
-    background-color: #f8f8f8;
+    overflow: hidden;
     padding: 20px;
-    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background: #ffffff;
 }
 
-nav a {
-    margin: 0 15px;
-    color: #333;
+.header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    position: relative;
+    z-index: 2;
+}
+
+.header h1 {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar {
+    float: right;
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: #ffffff;
     text-decoration: none;
+    padding: 10px 20px;
     font-size: 18px;
+    transition: background-color 0.3s;
 }
 
-nav a:hover {
-    color: #4CAF50;
+.navbar a:hover {
+    background: #e8491d;
+    color: #ffffff;
 }
 
-section {
-    margin: 50px 0;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+.section {
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
 }
 
-section:hover {
-    transform: scale(1.02);
-    transition: transform 0.2s;
+.section:last-child {
+    border-bottom: none;
 }
 
-h2 {
-    color: #4CAF50;
+.section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #35424a;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .header h1, .navbar a {
+        font-size: 16px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .section ul li {
+        font-size: 16px;
+    }
 }
