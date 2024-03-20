@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amrutha Patil's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h1>Amrutha Patil</h1>
+            <h1 class="title">Amrutha Patil</h1>
             <nav class="navbar">
                 <a href="#education">Education</a>
                 <a href="#experience">Experience</a>
@@ -52,5 +53,13 @@
         </section>
     </div>
     <script src="script.js"></script>
+    <script src="typed.min.js"></script>
+    <script>
+        var options = {
+            strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+            typeSpeed: 40
+        };
+        var typed = new Typed('.element', options);
+    </script>
 </body>
 </html>

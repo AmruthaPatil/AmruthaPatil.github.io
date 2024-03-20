@@ -8,3 +8,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Typed.js initialization for typing animation
+var typed = new Typed('.title', {
+    strings: ["Amrutha Patil"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true
+});
